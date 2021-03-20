@@ -6,6 +6,10 @@ characters: ["!","@","#","$","%","^","&","*","(",")","-","_","+","="],
 lowerCase: ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"],
 upperCase: ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Z","Y"],
  }
+  
+
+
+
 
  let opening = prompt("select a number of characters","less than 128 and more than 8 please");
 
@@ -28,12 +32,14 @@ finalstepmessage = function () {
 if (opening <= 8 && opening < 129 ) {
   window.alert ("incorrect number please refresh page");
 } else if (opening >= 8 && opening < 129) {
-    stepsmessage();
+    stepsmessage(); 
 }
-
-if (stepsmessage == true ) {
-      secondstepmessage();
-}
+ 
+//todo
+// use "Set/get" api to store number in initial prompt to make unique second array of number characters
+//lead to four functions gathering booleans- each yes will access random pull from "total" array loop stops when number above is reached
+// this should give me a random amount of each part of "total" array
+// use window alert to generate password 
 
 
 
